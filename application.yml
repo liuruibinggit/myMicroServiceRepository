@@ -20,8 +20,6 @@ zuul:
   routes: 
     user.serviceId: microservicecloud-user #要映射的微服务ID
     user.path: /user/**  #要被映射成什么地址
-
-
 server: 
   port: 9527
  
