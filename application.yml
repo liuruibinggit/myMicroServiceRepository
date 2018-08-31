@@ -1,0 +1,48 @@
+server: 
+  port: 9527
+ 
+spring: 
+  application:
+    name: microservicecloud-zuul-gateway
+ 
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka  
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true 
+ 
+ 
+zuul:
+  prefix: /cloud  #前缀：访问的时候要加上前缀
+  ignored-services: "*"  #忽略之前的接口访问
+  routes: 
+    user.serviceId: microservicecloud-user #要映射的微服务ID
+    user.path: /user/**  #要被映射成什么地址
+
+
+server: 
+  port: 9527
+ 
+spring: 
+  application:
+    name: microservicecloud-zuul-gateway
+ 
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka  
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true 
+ 
+ 
+zuul:
+  prefix: /cloud  #前缀：访问的时候要加上前缀
+  ignored-services: "*"  #忽略之前的接口访问
+  routes: 
+    user.serviceId: microservicecloud-user #要映射的微服务ID
+    user.path: /user/**  #要被映射成什么地址
+
+
