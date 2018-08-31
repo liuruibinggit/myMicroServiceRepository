@@ -1,5 +1,5 @@
 server: 
-  port: 9527
+  port: 9528
  
 spring: 
   application:
@@ -15,11 +15,11 @@ eureka:
  
  
 zuul:
-  prefix: /cloud  #Ç°×º£º·ÃÎÊµÄÊ±ºòÒª¼ÓÉÏÇ°×º
-  ignored-services: "*"  #ºöÂÔÖ®Ç°µÄ½Ó¿Ú·ÃÎÊ
+  prefix: /cloud  #å‰ç¼€ï¼šè®¿é—®çš„æ—¶å€™è¦åŠ ä¸Šå‰ç¼€
+  ignored-services: "*"  #å¿½ç•¥ä¹‹å‰çš„æ¥å£è®¿é—®
   routes: 
-    user.serviceId: microservicecloud-user #ÒªÓ³ÉäµÄÎ¢·şÎñID
-    user.path: /user/**  #Òª±»Ó³Éä³ÉÊ²Ã´µØÖ·
+    user.serviceId: microservicecloud-user #è¦æ˜ å°„çš„å¾®æœåŠ¡ID
+    user.path: /user/**  #è¦è¢«æ˜ å°„æˆä»€ä¹ˆåœ°å€
 
 
 server: 
@@ -39,10 +39,10 @@ eureka:
  
  
 zuul:
-  prefix: /cloud  #Ç°×º£º·ÃÎÊµÄÊ±ºòÒª¼ÓÉÏÇ°×º
-  ignored-services: "*"  #ºöÂÔÖ®Ç°µÄ½Ó¿Ú·ÃÎÊ
+  prefix: /cloud  #å‰ç¼€ï¼šè®¿é—®çš„æ—¶å€™è¦åŠ ä¸Šå‰ç¼€
+  ignored-services: "*"  #å¿½ç•¥ä¹‹å‰çš„æ¥å£è®¿é—®
   routes: 
-    user.serviceId: microservicecloud-user #ÒªÓ³ÉäµÄÎ¢·şÎñID
-    user.path: /user/**  #Òª±»Ó³Éä³ÉÊ²Ã´µØÖ·
+    user.serviceId: microservicecloud-user #è¦æ˜ å°„çš„å¾®æœåŠ¡ID
+    user.path: /user/**  #è¦è¢«æ˜ å°„æˆä»€ä¹ˆåœ°å€
 
 
